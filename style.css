@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+
+body {
+    font-family: "", monospace;
+    color: white;
+    background-color: black;
+}
+
+.container {
+    margin: 100px 2px 0px 200px;
+}
+
+.heading {
+    margin: 500px 0px 0px 0px;
+    font-size: 64px;
+    font-weight: 100;
+    position: relative;
+    width: max-content;
+}
+
+p::before,
+p::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+p::after {
+    width: 0.125em;
+    background-color: white;
+    animation: typewriter 6s steps(54) 1s forwards, 
+    blink 750ms steps(54) infinite;
+}
+
+p::before {
+    background-color: black;
+    animation: 
+    typewriter 6s steps(54) 1s forwards;
+
+
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%
+    }
+}
+
+@keyframes blink{
+    to {
+        background: transparent;
+    }
+}
+
